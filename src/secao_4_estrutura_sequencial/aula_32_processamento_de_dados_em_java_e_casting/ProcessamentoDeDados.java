@@ -1,6 +1,6 @@
-package secao_4_estrutura_sequencial.aula_32_processamento_dados_em_java_e_casting;
+package secao_4_estrutura_sequencial.aula_32_processamento_de_dados_em_java_e_casting;
 
-public class ProcessamentoDados {
+public class ProcessamentoDeDados {
     public static void main(String[] args) {
         System.out.println("EXEMPLO 1");
         int x, y;
