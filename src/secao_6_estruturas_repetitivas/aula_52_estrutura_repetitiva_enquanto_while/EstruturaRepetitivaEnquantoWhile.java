@@ -6,7 +6,7 @@ Fazer um programa que lê números inteiros até que um zero seja lido.
 Ao final mostrar a soma dos números lidos.
 ENTRADA         SAIDA
 5 2 4 0         11
- */
+*/
 
 import java.util.Scanner;
 
