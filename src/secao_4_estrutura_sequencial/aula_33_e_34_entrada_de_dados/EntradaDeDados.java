@@ -35,11 +35,26 @@ public class EntradaDeDados {
         double flutuante = sc.nextDouble();
         System.out.printf("Dado Texto: %s%nDado Inteiro: %d%nDado Flutuante com Virgula: %.2f%n", texto, inteiro, flutuante);
 
-        System.out.println("\nLER VARIOS DADOS DE TIPOS DIFERENTES/IGUAIS NA MESMA LINHA SEPARADOS POR ESPACO (string int double.)");
-        String texto2 = sc.next();
-        int inteiro2 = sc.nextInt();
-        double flutuante2 = sc2.nextDouble();
-        System.out.printf("Dado Texto: %s%nDado Inteiro: %d%nDado Flutuante com Ponto: %.2f%n", texto2, inteiro2, flutuante2);
+        System.out.println("\nLER TEXTO ATE A QUEBRA DE LINHA");
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+        String s3 = sc.nextLine();
+        System.out.printf("Dado 1: %s%nDado 2: %s%nDado 3: %s%n", s1, s2, s3);
+
+        System.out.println("\nQUEBRA DE LINHA PENDENTE BUGADO");
+        int i = sc.nextInt();
+        String s4 = sc.nextLine();
+        String s5 = sc.nextLine();
+        String s6 = sc.nextLine();
+        System.out.printf("Dado 1 (int): %d%nDado 2: %s%nDado 3: %s%nDado 4: %s%n", i, s4, s5, s6);
+
+        System.out.println("\nQUEBRA DE LINHA PENDENTE BUGADO");
+        int i2 = sc.nextInt();
+        sc.nextLine();
+        String s7 = sc.nextLine();
+        String s8 = sc.nextLine();
+        String s9 = sc.nextLine();
+        System.out.printf("Dado 1 (int): %d%nDado 2: %s%nDado 3: %s%nDado 4: %s%n", i2, s7, s8, s9);
 
         sc.close();
     }
