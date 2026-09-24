@@ -1,4 +1,4 @@
-package secao_8_introducao_a_programacao_orientada_a_objetos.aula_75_object_e_tostring.application;
+package secao_8_introducao_a_programacao_orientada_a_objetos.aula_76_finalizando_o_programa.application;
 
 /*
 Fazer um programa para ler os dados de um produto em estoque (nome, preço e quantidade no estoque). Em seguida:
@@ -36,7 +36,7 @@ import secao_8_introducao_a_programacao_orientada_a_objetos.aula_76_finalizando_
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ObjectEtoString {
+public class FinalizandoOPrograma {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -50,8 +50,18 @@ public class ObjectEtoString {
         System.out.print("Quantity in stock: ");
         product.quantity = sc.nextInt();
 
-        System.out.println("\n" + product);
+        System.out.println("\nProduct data: "+ product);
 
+        System.out.print("\nEnter the number of products to be added in stock: ");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
+        System.out.println("\nUpdated data: " + product);
+
+        System.out.print("\nEnter the number of products to be removed from stock: ");
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
+
+        System.out.println("\nUpdated data: " + product);
         sc.close();
     }
 }
