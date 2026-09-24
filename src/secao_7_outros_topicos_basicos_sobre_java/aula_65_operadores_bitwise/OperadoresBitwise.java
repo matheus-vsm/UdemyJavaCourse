@@ -1,0 +1,20 @@
+package secao_7_outros_topicos_basicos_sobre_java.aula_65_operadores_bitwise;
+
+import java.util.Scanner;
+
+public class OperadoresBitwise {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int mask = 0b100000;
+        System.out.print("Digite um número: ");
+        int n = sc.nextInt();
+
+        if ((n & mask) != 0) {
+            System.out.println("6th bit is true!");
+        } else {
+            System.out.println("6th bit is false!");
+        }
+        sc.close();
+    }
+}
