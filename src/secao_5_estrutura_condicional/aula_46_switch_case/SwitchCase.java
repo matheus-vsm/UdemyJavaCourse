@@ -3,6 +3,24 @@ package secao_5_estrutura_condicional.aula_46_switch_case;
 import java.util.Scanner;
 
 /*
+SINTAXE
+switch ( expressão ) {
+case valor1:
+    comando1
+    comando2
+    break;
+case valor2:
+    comando3
+    comando4
+    break;
+default:
+    comando5
+    comando6
+    break;
+}
+*/
+
+/*
 Fazer um programa para ler um valor inteiro de 1 a 7 representando um
 dia da semana (sendo 1  domingo, 2 = segunda, e assim por diante).
 Escrever na tela o dia da semana correspondente, conforme exemplos.

@@ -8,8 +8,8 @@ do {
 } while (condicao);
 
 REGRA
-true = volta
-false = pula fora
+true: volta
+false: pula fora
 */
 
 /*

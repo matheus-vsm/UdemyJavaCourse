@@ -1,5 +1,14 @@
 package secao_4_estrutura_sequencial.aula_32_processamento_de_dados_em_java_e_casting;
 
+/*
+SINTAXE
+variavel = expressao;
+
+REGRA
+1: a expressao é calculada
+2: o resultado da expressão é armazenado na variavel
+*/
+
 public class ProcessamentoDeDados {
     public static void main(String[] args) {
         System.out.println("EXEMPLO 1");

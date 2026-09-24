@@ -1,6 +1,18 @@
 package secao_6_estruturas_repetitivas.aula_57_estrutura_repetitiva_para_for;
 
 /*
+SINTAXE
+for ( inicio ; condicao ; incremento ) {
+    comando 1
+    comando 2
+}
+
+REGRAS
+inicio: executa somente na primeira vez
+condicao: true = executa e volta | false = executa toda vez depois de voltar
+ */
+
+/*
 PROBLEMA EXEMPLO
 Fazer um programa que lê um valor inteiro N e depois N números inteiros.
 Ao final, mostrar a soma dos N números lidos.

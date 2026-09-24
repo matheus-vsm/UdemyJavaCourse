@@ -1,6 +1,18 @@
 package secao_6_estruturas_repetitivas.aula_52_estrutura_repetitiva_enquanto_while;
 
 /*
+SINTAXE
+while ( condicao ) {
+    comando 1
+    comando 2
+}
+
+REGRA
+true = executa e volta
+false = pula fora
+*/
+
+/*
 PROBLEMA EXEMPLO
 Fazer um programa que lê números inteiros até que um zero seja lido.
 Ao final mostrar a soma dos números lidos.
