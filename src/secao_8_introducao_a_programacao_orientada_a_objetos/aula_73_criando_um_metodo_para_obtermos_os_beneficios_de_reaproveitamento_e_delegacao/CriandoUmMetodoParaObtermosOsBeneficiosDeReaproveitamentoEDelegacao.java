@@ -1,4 +1,4 @@
-package secao_8_introducao_a_programacao_orientada_a_objetos.aula_72_criando_uma_classe_com_tres_atributos_para_representar_melhor_o_triangulo;
+package secao_8_introducao_a_programacao_orientada_a_objetos.aula_73_criando_um_metodo_para_obtermos_os_beneficios_de_reaproveitamento_e_delegacao;
 
 /*
 Fazer um programa para ler as medidas dos lados de dois triângulos X e Y (suponha medidas
@@ -22,12 +22,12 @@ Triangle Y area: 7.5638
 Larger area: Y
 */
 
-import secao_8_introducao_a_programacao_orientada_a_objetos.aula_72_criando_uma_classe_com_tres_atributos_para_representar_melhor_o_triangulo.entities.Triangle;
+import secao_8_introducao_a_programacao_orientada_a_objetos.aula_73_criando_um_metodo_para_obtermos_os_beneficios_de_reaproveitamento_e_delegacao.entities.Triangle;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class CriandoUmaClasseComTresAtributosParaRepresentarMelhorOTriangulo {
+public class CriandoUmMetodoParaObtermosOsBeneficiosDeReaproveitamentoEDelegacao {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -46,11 +46,8 @@ public class CriandoUmaClasseComTresAtributosParaRepresentarMelhorOTriangulo {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("\nTriangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
